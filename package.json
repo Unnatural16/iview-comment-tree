@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "a comment-tree component based on iView",
   "author": "limshung",
+  "files": ["dist/*"],
   "license": "MIT",
   "keywords": [
     "vue",

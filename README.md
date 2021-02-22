@@ -1,3 +1,17 @@
+<h1 align="center">iview comment tree</h1>
+
+<p align="center">
+  <a href="https://npmjs.org/package/iview-comment-tree">
+    <img src="https://img.shields.io/npm/v/iview-comment-tree.svg" alt="npm version">
+  </a>
+  <a href="https://npmjs.org/package/iview-comment-tree">
+    <img src="https://img.shields.io/npm/dt/iview-comment-tree.svg" alt="downloads">
+  </a>
+  <a>
+    <img src="https://img.shields.io/badge/iview-comment-tree.svg" alt="license MIT">
+  </a>
+</p>
+
 ## 安装
 
 ```bash
@@ -39,7 +53,7 @@ export default {
 </script>
 ```
 
-![截图](./screenshot.png)
+![截图](https://github.com/Unnatural16/iview-comment-tree/blob/master/screenshot.png?raw=true)
 
 ## Props
 
@@ -67,4 +81,10 @@ export default {
 
 ## 示例
 
-查看`src/examples`
+查看[src/examples](https://github.com/Unnatural16/iview-comment-tree/tree/master/src/examples)
+
+或者本地运行`npm run serve`
+
+## LICENSE
+
+[MIT](https://github.com/Unnatural16/iview-comment-tree/blob/master/LICENSE)

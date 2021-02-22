@@ -109,10 +109,12 @@ export default {
     },
     commitComment() {
       if (!this.inputComment) {
-        this.$Message.warning({
-          background: true,
-          content: "评论信息不能为空！"
-        });
+        if (this.$warning) {
+          this.$Message.warning({
+            background: true,
+            content: "评论信息不能为空！"
+          });
+        }
       } else {
         this.$emit("on-comment", {
           content: this.inputComment,
