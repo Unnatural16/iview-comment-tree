@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/npm/dt/iview-comment-tree.svg" alt="downloads">
   </a>
   <a>
-    <img src="https://img.shields.io/badge/iview-comment-tree.svg" alt="license MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license MIT">
   </a>
 </p>
 
