@@ -13,7 +13,7 @@
   "main": "dist/iview-comment-tree.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve src/examples/main.js",
-    "build": "vue-cli-service build --dest demo src/examples/main.js",
+    "build": "vue-cli-service build --dest docs src/examples/main.js",
     "build:lib": "vue-cli-service build --target lib --name iview-comment-tree src/index.js",
     "lint": "vue-cli-service lint"
   },
