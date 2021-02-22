@@ -1,14 +1,23 @@
 {
   "name": "iview-comment-tree",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "a comment-tree component based on iView",
+  "author": "limshung",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "iView",
+    "comment-tree"
+  ],
+  "main": "dist/iview-comment-tree.umd.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve src/examples/main.js",
+    "build": "vue-cli-service build --target lib --name iview-comment-tree src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "view-design": "^4.5.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -46,9 +55,6 @@
     "last 2 versions",
     "not dead"
   ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
     "*.{js,jsx,vue}": [
       "vue-cli-service lint",
