@@ -1,6 +1,6 @@
 {
   "name": "iview-comment-tree",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "a comment-tree component based on iView",
   "author": "limshung",
   "files": ["dist/*"],

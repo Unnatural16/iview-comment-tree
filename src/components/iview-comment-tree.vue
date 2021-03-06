@@ -77,6 +77,10 @@ export default {
           return date.toLocaleDateString();
         }
       }
+    },
+    avatarSize: {
+      type: [Number, String],
+      default: "small"
     }
   },
   computed: {
@@ -99,7 +103,8 @@ export default {
     return {
       pageSize: this.pageSize,
       RenderTime: this.RenderTime,
-      showCommentInput: this.showCommentInput
+      showCommentInput: this.showCommentInput,
+      avatarSize: this.avatarSize
     };
   },
   methods: {

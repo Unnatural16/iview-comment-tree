@@ -57,21 +57,23 @@ export default {
 
 ## Props
 
-| 属性               | 描述            | 类型     | 接受值                           | 默认值         |
-| ------------------ | --------------- | -------- | -------------------------------- | -------------- |
-| pageSize           | 每页评论数      | Number   | 正整数                           | 10             |
-| defaultPlaceholder | 默认placeholder | String   | -                                | "写下你的评论" |
-| RenderTime         | 时间渲染函数    | Function | 参数为Date，返回值为字符串的函数 | 默认渲染函数   |
-| comments           | 评论数组树      | Array    | 见comment                        | 演示默认值     |
+| 属性               | 描述            | 类型           | 接受值                                 | 默认值         |
+| ------------------ | --------------- | -------------- | -------------------------------------- | -------------- |
+| pageSize           | 每页评论数      | Number         | 正整数                                 | 10             |
+| defaultPlaceholder | 默认placeholder | String         | -                                      | "写下你的评论" |
+| RenderTime         | 时间渲染函数    | Function       | 参数为Date，返回值为字符串的函数       | 默认渲染函数   |
+| comments           | 评论数组树      | Array          | 见comment                              | 演示默认值     |
+| avatarSize         | 头像大小        | String或Number | 可选为 large、small、default或具体数字 | "small"        |
 
 ### comments
 
-| 属性          | 描述       | 类型   | 接受值         |
-| ------------- | ---------- | ------ | -------------- |
-| username      | 用户名     | String | -              |
-| content       | 评论内容   | String | -              |
-| CreateTime    | 日期       | Date   | -              |
-| ReplyComments | 评论数组树 | Array  | comments，可空 |
+| 属性          | 描述       | 类型   | 接受值            |
+| ------------- | ---------- | ------ | ----------------- |
+| username      | 用户名     | String | -                 |
+| content       | 评论内容   | String | -                 |
+| CreateTime    | 日期       | Date   | -                 |
+| ReplyComments | 评论数组树 | Array  | comments，可空    |
+| avatar        | 头像       | String | 一个指向图片的url |
 
 ## event
 

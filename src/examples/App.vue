@@ -4,6 +4,7 @@
       class="middle"
       :comments="comments"
       @on-comment="reply"
+      avatarSize="large"
     />
   </div>
 </template>

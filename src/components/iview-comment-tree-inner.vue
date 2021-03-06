@@ -3,9 +3,17 @@
     <List item-layout="vertical" size="small" :split="false">
       <ListItem v-for="item in pageComments" :key="item._id">
         <ListItem>
-          <Avatar size="small" :src="item.avatar" icon="ios-person"></Avatar
-          >&nbsp;<span style="color: #2d9aff">{{ item.username }}</span>
-          <li style="margin-left: 26px">{{ item.content }}</li>
+          <div class="comment-wrapper">
+            <Avatar
+              :size="avatarSize"
+              :src="item.avatar"
+              icon="ios-person"
+            ></Avatar>
+            <div class="comment-inner">
+              <span style="color: #2d9aff">{{ item.username }}</span>
+              <li>{{ item.content }}</li>
+            </div>
+          </div>
           <template slot="action">
             <li style="cursor: default">
               <Icon type="ios-calendar-outline" />
@@ -51,7 +59,7 @@
       v-if="comments && comments.length > pageSize"
       :page-size="pageSize"
       :current.sync="pageIndex"
-      style="textAlign: center"
+      style="textalign: center"
     />
   </div>
 </template>
@@ -59,7 +67,7 @@
 <script>
 export default {
   name: "IviewCommentTreeInner",
-  inject: ["pageSize", "RenderTime", "showCommentInput"],
+  inject: ["pageSize", "RenderTime", "showCommentInput", "avatarSize"],
   props: {
     comments: Array
   },
@@ -86,10 +94,16 @@ export default {
 
 <style lang="stylus" scoped>
 .button
-  padding 5px
-  border-radius 5px
+  padding: 5px
+  border-radius: 5px
   &:hover
-    background #DDDDDD
+    background: #DDDDDD
   &:active
-    background #CCCCCC
+    background: #CCCCCC
+
+.comment-wrapper
+  display:flex
+  gap:20px
+  .comment-inner
+    flex:1
 </style>
